@@ -20,7 +20,7 @@ Incremento del % de domiciliaciones exitosas.
 
 Disminución de intentos fallidos por estrategias lentas o costosas.
 
-Automatización parcial de la toma de decisiones operativas en cobranza.
+Automatización la toma de decisiones operativas en cobranza.
 
 
 ## 🚀 Para ejecutar el proyecto
