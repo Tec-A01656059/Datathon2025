@@ -16,11 +16,12 @@ Desarrollar una solución que permita:
 
 
 ## Resultados Alcanzados
-Incremento del % de domiciliaciones exitosas.
+- Reducción del 52% en costos operacionales.
 
-Disminución de intentos fallidos por estrategias lentas o costosas.
+- Simulación del comportamiento del cliente hasta por 12 meses para toma de decisiones.
 
-Automatización la toma de decisiones operativas en cobranza.
+- Minimizar solicitudes realizadas para completar el cobro y paro temprano si hay riesgo de que no pague el cliente.
+
 
 ## Contenidos Repositorio
 - Modelos de predicción de comportamiento completamente entrenados
@@ -29,14 +30,10 @@ Automatización la toma de decisiones operativas en cobranza.
 - Código de Analítica de datos
 
 ## Para ejecutar el proyecto
-bash
-Copiar
-Editar
-git clone https://github.com/tu_usuario/credifiel-cobranza-hackathon.git
-cd credifiel-cobranza-hackathon
-pip install -r requirements.txt
-streamlit run dashboard/app.py
-
+git clone https://github.com/tu_usuario/credifiel-cobranza-hackathon.git  
+cd credifiel-cobranza-hackathon  
+pip install -r requirements.txt  
+streamlit run dashboard/app.py  
 
 ## 🤝 Integrantes del Equipo
 Samantha Ruelas Valtierra  
