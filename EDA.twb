@@ -1,0 +1,1680 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0415.1018                               -->
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Credifiel_Enhanced1' inline='true' name='federated.10tcw2x1tjgebu11cgds80kxj7rw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Credifiel_Enhanced1' name='textscan.1qjiwhs1nmdl2b1dnhnfe1sfgbzg'>
+            <connection class='textscan' directory='C:/Users/soalv/Documents/Tecnológico de Monterrey/8vo Semestre/Datathon' filename='Credifiel_Enhanced1.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='CatBanco' name='textscan.0gcibzz1poif511egeb9g0xqx7do'>
+            <connection class='textscan' directory='C:/Users/soalv/Documents/Tecnológico de Monterrey/8vo Semestre/Datathon' filename='CatBanco.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='IntentosCobro_PrimerExito' name='textscan.086smjo1ivh58w1eo3bd91rl7gd6'>
+            <connection class='textscan' directory='C:/Users/soalv/Documents/Tecnológico de Monterrey/8vo Semestre/Datathon' filename='IntentosCobro_PrimerExito.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.1qjiwhs1nmdl2b1dnhnfe1sfgbzg' name='Credifiel_Enhanced1.csv' table='[Credifiel_Enhanced1#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+              <column datatype='integer' name='idListaCobro' ordinal='0' />
+              <column datatype='integer' name='idCredito' ordinal='1' />
+              <column datatype='integer' name='idBanco' ordinal='2' />
+              <column datatype='real' name='montoExigible' ordinal='3' />
+              <column datatype='real' name='montoCobrado' ordinal='4' />
+              <column datatype='integer' name='idRespuestaBanco' ordinal='5' />
+              <column datatype='integer' name='year' ordinal='6' />
+              <column datatype='date' name='fechaEnvioCobro2' ordinal='7' />
+              <column datatype='date' name='fechaCobroBanco2' ordinal='8' />
+              <column datatype='real' name='idEmisora' ordinal='9' />
+              <column datatype='integer' name='contador_id' ordinal='10' />
+              <column datatype='real' name='NumdeIntento' ordinal='11' />
+              <column datatype='string' name='Corte' ordinal='12' />
+              <column datatype='real' name='Pagaré' ordinal='13' />
+              <column datatype='real' name='IdBanco' ordinal='14' />
+              <column datatype='real' name='costoSolictud' ordinal='15' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0gcibzz1poif511egeb9g0xqx7do' name='CatBanco.csv' table='[CatBanco#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+              <column datatype='integer' name='IdBanco' ordinal='0' />
+              <column datatype='string' name='Nombre' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='textscan.086smjo1ivh58w1eo3bd91rl7gd6' name='IntentosCobro_PrimerExito.csv' table='[IntentosCobro_PrimerExito#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+              <column datatype='integer' name='idCredito' ordinal='0' />
+              <column datatype='integer' name='primerCobro' ordinal='1' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[Corte]' value='[Credifiel_Enhanced1.csv].[Corte]' />
+          <map key='[IdBanco (CatBanco.csv)]' value='[CatBanco.csv].[IdBanco]' />
+          <map key='[IdBanco]' value='[Credifiel_Enhanced1.csv].[IdBanco]' />
+          <map key='[Nombre]' value='[CatBanco.csv].[Nombre]' />
+          <map key='[NumdeIntento]' value='[Credifiel_Enhanced1.csv].[NumdeIntento]' />
+          <map key='[Pagaré]' value='[Credifiel_Enhanced1.csv].[Pagaré]' />
+          <map key='[contador_id]' value='[Credifiel_Enhanced1.csv].[contador_id]' />
+          <map key='[costoSolictud]' value='[Credifiel_Enhanced1.csv].[costoSolictud]' />
+          <map key='[fechaCobroBanco2]' value='[Credifiel_Enhanced1.csv].[fechaCobroBanco2]' />
+          <map key='[fechaEnvioCobro2]' value='[Credifiel_Enhanced1.csv].[fechaEnvioCobro2]' />
+          <map key='[idBanco]' value='[Credifiel_Enhanced1.csv].[idBanco]' />
+          <map key='[idCredito (IntentosCobro_PrimerExito.csv)]' value='[IntentosCobro_PrimerExito.csv].[idCredito]' />
+          <map key='[idCredito]' value='[Credifiel_Enhanced1.csv].[idCredito]' />
+          <map key='[idEmisora]' value='[Credifiel_Enhanced1.csv].[idEmisora]' />
+          <map key='[idListaCobro]' value='[Credifiel_Enhanced1.csv].[idListaCobro]' />
+          <map key='[idRespuestaBanco]' value='[Credifiel_Enhanced1.csv].[idRespuestaBanco]' />
+          <map key='[montoCobrado]' value='[Credifiel_Enhanced1.csv].[montoCobrado]' />
+          <map key='[montoExigible]' value='[Credifiel_Enhanced1.csv].[montoExigible]' />
+          <map key='[primerCobro]' value='[IntentosCobro_PrimerExito.csv].[primerCobro]' />
+          <map key='[year]' value='[Credifiel_Enhanced1.csv].[year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[CatBanco.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[IntentosCobro_PrimerExito.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>idListaCobro</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[idListaCobro]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>idListaCobro</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>idCredito</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[idCredito]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>idCredito</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>idBanco</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[idBanco]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>idBanco</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>montoExigible</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[montoExigible]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>montoExigible</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>montoCobrado</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[montoCobrado]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>montoCobrado</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>idRespuestaBanco</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[idRespuestaBanco]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>idRespuestaBanco</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fechaEnvioCobro2</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[fechaEnvioCobro2]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>fechaEnvioCobro2</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fechaCobroBanco2</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[fechaCobroBanco2]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>fechaCobroBanco2</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>idEmisora</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[idEmisora]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>idEmisora</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contador_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[contador_id]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>contador_id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumdeIntento</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NumdeIntento]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>NumdeIntento</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Corte</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Corte]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>Corte</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pagaré</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pagaré]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>Pagaré</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IdBanco</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IdBanco]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>IdBanco</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>costoSolictud</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[costoSolictud]</local-name>
+            <parent-name>[Credifiel_Enhanced1.csv]</parent-name>
+            <remote-alias>costoSolictud</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IdBanco</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IdBanco (CatBanco.csv)]</local-name>
+            <parent-name>[CatBanco.csv]</parent-name>
+            <remote-alias>IdBanco</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nombre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nombre]</local-name>
+            <parent-name>[CatBanco.csv]</parent-name>
+            <remote-alias>Nombre</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>idCredito</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[idCredito (IntentosCobro_PrimerExito.csv)]</local-name>
+            <parent-name>[IntentosCobro_PrimerExito.csv]</parent-name>
+            <remote-alias>idCredito</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>primerCobro</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[primerCobro]</local-name>
+            <parent-name>[IntentosCobro_PrimerExito.csv]</parent-name>
+            <remote-alias>primerCobro</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[IdBanco (CatBanco.csv)]' role='dimension' type='ordinal' />
+      <column caption='Id Banco' datatype='real' name='[IdBanco]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Nombre]' role='dimension' type='nominal' />
+      <column caption='Numde Intento' datatype='real' name='[NumdeIntento]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Pagaré]' role='measure' type='quantitative' />
+      <column caption='CatBanco.csv' datatype='table' name='[__tableau_internal_object_id__].[CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73]' role='measure' type='quantitative' />
+      <column caption='Credifiel_Enhanced1.csv' datatype='table' name='[__tableau_internal_object_id__].[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]' role='measure' type='quantitative' />
+      <column caption='IntentosCobro_PrimerExito.csv' datatype='table' name='[__tableau_internal_object_id__].[IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1]' role='measure' type='quantitative' />
+      <column caption='Contador Id' datatype='integer' name='[contador_id]' role='dimension' type='ordinal' />
+      <column caption='Costo Solictud' datatype='real' name='[costoSolictud]' role='measure' type='quantitative' />
+      <column caption='Id Banco1' datatype='integer' name='[idBanco]' role='dimension' type='ordinal' />
+      <column caption='idCredito (IntentosCobro PrimerExito.csv)' datatype='integer' name='[idCredito (IntentosCobro_PrimerExito.csv)]' role='dimension' type='ordinal' />
+      <column caption='Id Credito' datatype='integer' name='[idCredito]' role='dimension' type='ordinal' />
+      <column caption='Id Emisora' datatype='real' name='[idEmisora]' role='dimension' type='ordinal' />
+      <column caption='Id Lista Cobro' datatype='integer' name='[idListaCobro]' role='dimension' type='ordinal' />
+      <column caption='Id Respuesta Banco' datatype='integer' name='[idRespuestaBanco]' role='dimension' type='ordinal' />
+      <column caption='Monto Cobrado' datatype='real' name='[montoCobrado]' role='measure' type='quantitative' />
+      <column caption='Monto Exigible' datatype='real' name='[montoExigible]' role='measure' type='quantitative' />
+      <column caption='Primer Cobro' datatype='integer' name='[primerCobro]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[costoSolictud]' derivation='Avg' name='[avg:costoSolictud:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[IdBanco]' derivation='None' name='[none:IdBanco:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Nombre]' derivation='None' name='[none:Nombre:nk]' pivot='key' type='nominal' />
+      <column-instance column='[NumdeIntento]' derivation='Sum' name='[sum:NumdeIntento:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Pagaré]' derivation='Sum' name='[sum:Pagaré:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[costoSolictud]' derivation='Sum' name='[sum:costoSolictud:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[montoCobrado]' derivation='Sum' name='[sum:montoCobrado:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[montoExigible]' derivation='Sum' name='[sum:montoExigible:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/soalv/AppData/Local/Temp/TableauTemp/#TableauTemp_1taocif0hfkztr1dh0rf70hu80k0.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/25/2025 03:24:08 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB' table='[Extract].[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]' type='table' />
+            <relation name='CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73' table='[Extract].[CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73]' type='table' />
+            <relation name='IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1' table='[Extract].[IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1]' type='table' />
+          </relation>
+          <cols>
+            <map key='[Corte]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[Corte]' />
+            <map key='[IdBanco (CatBanco.csv)]' value='[CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73].[IdBanco]' />
+            <map key='[IdBanco]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[IdBanco]' />
+            <map key='[Nombre]' value='[CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73].[Nombre]' />
+            <map key='[NumdeIntento]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[NumdeIntento]' />
+            <map key='[Pagaré]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[Pagaré]' />
+            <map key='[contador_id]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[contador_id]' />
+            <map key='[costoSolictud]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[costoSolictud]' />
+            <map key='[fechaCobroBanco2]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[fechaCobroBanco2]' />
+            <map key='[fechaEnvioCobro2]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[fechaEnvioCobro2]' />
+            <map key='[idBanco]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[idBanco1]' />
+            <map key='[idCredito (IntentosCobro_PrimerExito.csv)]' value='[IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1].[idCredito]' />
+            <map key='[idCredito]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[idCredito]' />
+            <map key='[idEmisora]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[idEmisora]' />
+            <map key='[idListaCobro]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[idListaCobro]' />
+            <map key='[idRespuestaBanco]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[idRespuestaBanco]' />
+            <map key='[montoCobrado]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[montoCobrado]' />
+            <map key='[montoExigible]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[montoExigible]' />
+            <map key='[primerCobro]' value='[IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1].[primerCobro]' />
+            <map key='[year]' value='[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB].[year]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>idListaCobro</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[idListaCobro]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>idListaCobro</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>58975</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>idCredito</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[idCredito]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>idCredito</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>122189</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>idBanco1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[idBanco]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>idBanco1</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>montoExigible</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[montoExigible]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>montoExigible</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>143086</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>montoCobrado</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[montoCobrado]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>montoCobrado</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>189322</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>idRespuestaBanco</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[idRespuestaBanco]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>idRespuestaBanco</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fechaEnvioCobro2</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[fechaEnvioCobro2]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>fechaEnvioCobro2</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1029</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fechaCobroBanco2</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[fechaCobroBanco2]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>fechaCobroBanco2</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1152</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>idEmisora</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[idEmisora]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>idEmisora</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contador_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[contador_id]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>contador_id</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9222</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NumdeIntento</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[NumdeIntento]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>NumdeIntento</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4361</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Corte</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Corte]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>Corte</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pagaré</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Pagaré]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>Pagaré</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18140</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IdBanco</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[IdBanco]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>IdBanco</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>costoSolictud</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[costoSolictud]</local-name>
+              <parent-name>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</parent-name>
+              <remote-alias>costoSolictud</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Credifiel_Enhanced1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IdBanco</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[IdBanco (CatBanco.csv)]</local-name>
+              <parent-name>[CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73]</parent-name>
+              <remote-alias>IdBanco</remote-alias>
+              <ordinal>16</ordinal>
+              <family>CatBanco.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nombre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Nombre]</local-name>
+              <parent-name>[CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73]</parent-name>
+              <remote-alias>Nombre</remote-alias>
+              <ordinal>17</ordinal>
+              <family>CatBanco.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>idCredito</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[idCredito (IntentosCobro_PrimerExito.csv)]</local-name>
+              <parent-name>[IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1]</parent-name>
+              <remote-alias>idCredito</remote-alias>
+              <ordinal>18</ordinal>
+              <family>IntentosCobro_PrimerExito.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45585</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>primerCobro</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[primerCobro]</local-name>
+              <parent-name>[IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1]</parent-name>
+              <remote-alias>primerCobro</remote-alias>
+              <ordinal>19</ordinal>
+              <family>IntentosCobro_PrimerExito.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>212</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:IdBanco:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2.0</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>12.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>72.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>14.0</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Nombre:nk]&#10;[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;BANAMEX&quot;</bucket>
+                <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[avg:costoSolictud:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;BANAMEX&quot;</bucket>
+                <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:costoSolictud:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#59a14f'>
+              <multibucket>
+                <bucket>&quot;BANORTE&quot;</bucket>
+                <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:Calculation_1073264099914059779:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#76b7b2'>
+              <multibucket>
+                <bucket>&quot;BBVA MEXICO&quot;</bucket>
+                <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[avg:costoSolictud:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#76b7b2'>
+              <multibucket>
+                <bucket>&quot;BBVA MEXICO&quot;</bucket>
+                <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:costoSolictud:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;BBVA MEXICO&quot;</bucket>
+                <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:Calculation_1073264099914059779:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#bab0ac'>
+              <multibucket>
+                <bucket>&quot;BANORTE&quot;</bucket>
+                <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[avg:costoSolictud:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#bab0ac'>
+              <multibucket>
+                <bucket>&quot;BANORTE&quot;</bucket>
+                <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:costoSolictud:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;SANTANDER&quot;</bucket>
+                <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[avg:costoSolictud:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;SANTANDER&quot;</bucket>
+                <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:costoSolictud:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#edc948'>
+              <multibucket>
+                <bucket>&quot;BANAMEX&quot;</bucket>
+                <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:Calculation_1073264099914059779:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;SANTANDER&quot;</bucket>
+                <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:Calculation_1073264099914059779:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[usr:Calculation_1073264099886055426:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:montoExigible:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:montoCobrado:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[__tableau_internal_object_id__].[cnt:Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:Pagaré:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:costoSolictud:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:NumdeIntento:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[avg:costoSolictud:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.10tcw2x1tjgebu11cgds80kxj7rw].[__tableau_internal_object_id__].[cnt:CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Nombre:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;BANAMEX&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;BBVA MEXICO&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BANORTE&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SANTANDER&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos Mexicanos&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='IdBanco (CatBanco.csv)' />
+        <field-sort-custom-order field='Nombre' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='CatBanco.csv' id='CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73'>
+            <properties context=''>
+              <relation connection='textscan.0gcibzz1poif511egeb9g0xqx7do' name='CatBanco.csv' table='[CatBanco#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='integer' name='IdBanco' ordinal='0' />
+                  <column datatype='string' name='Nombre' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73' table='[Extract].[CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73]' type='table' />
+            </properties>
+          </object>
+          <object caption='Credifiel_Enhanced1.csv' id='Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB'>
+            <properties context=''>
+              <relation connection='textscan.1qjiwhs1nmdl2b1dnhnfe1sfgbzg' name='Credifiel_Enhanced1.csv' table='[Credifiel_Enhanced1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='integer' name='idListaCobro' ordinal='0' />
+                  <column datatype='integer' name='idCredito' ordinal='1' />
+                  <column datatype='integer' name='idBanco' ordinal='2' />
+                  <column datatype='real' name='montoExigible' ordinal='3' />
+                  <column datatype='real' name='montoCobrado' ordinal='4' />
+                  <column datatype='integer' name='idRespuestaBanco' ordinal='5' />
+                  <column datatype='integer' name='year' ordinal='6' />
+                  <column datatype='date' name='fechaEnvioCobro2' ordinal='7' />
+                  <column datatype='date' name='fechaCobroBanco2' ordinal='8' />
+                  <column datatype='real' name='idEmisora' ordinal='9' />
+                  <column datatype='integer' name='contador_id' ordinal='10' />
+                  <column datatype='real' name='NumdeIntento' ordinal='11' />
+                  <column datatype='string' name='Corte' ordinal='12' />
+                  <column datatype='real' name='Pagaré' ordinal='13' />
+                  <column datatype='real' name='IdBanco' ordinal='14' />
+                  <column datatype='real' name='costoSolictud' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB' table='[Extract].[Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB]' type='table' />
+            </properties>
+          </object>
+          <object caption='IntentosCobro_PrimerExito.csv' id='IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1'>
+            <properties context=''>
+              <relation connection='textscan.086smjo1ivh58w1eo3bd91rl7gd6' name='IntentosCobro_PrimerExito.csv' table='[IntentosCobro_PrimerExito#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='integer' name='idCredito' ordinal='0' />
+                  <column datatype='integer' name='primerCobro' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1' table='[Extract].[IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[idBanco]' />
+              <expression op='[IdBanco (CatBanco.csv)]' />
+            </expression>
+            <first-end-point object-id='Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB' />
+            <second-end-point object-id='CatBanco.csv_D3ED6985E6D345EDAD06B74A3B4C0C73' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[idCredito]' />
+              <expression op='[idCredito (IntentosCobro_PrimerExito.csv)]' />
+            </expression>
+            <first-end-point object-id='Credifiel_Enhanced1.csv_46B40991B0B64EE58A831D7D831CACFB' />
+            <second-end-point object-id='IntentosCobro_PrimerExito.csv_0BAF73C704424A49A0BCD5508E66F8A1' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Costo promedio por solicitud (2022-2024)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Credifiel_Enhanced1' name='federated.10tcw2x1tjgebu11cgds80kxj7rw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10tcw2x1tjgebu11cgds80kxj7rw'>
+            <column datatype='string' name='[Nombre]' role='dimension' type='nominal' />
+            <column-instance column='[costoSolictud]' derivation='Avg' name='[avg:costoSolictud:qk]' pivot='key' type='quantitative' />
+            <column caption='Costo Solictud' datatype='real' name='[costoSolictud]' role='measure' type='quantitative' />
+            <column-instance column='[Nombre]' derivation='None' name='[none:Nombre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Nombre:nk]' member='&quot;BANAMEX&quot;' />
+              <groupfilter function='member' level='[none:Nombre:nk]' member='&quot;BANORTE&quot;' />
+              <groupfilter function='member' level='[none:Nombre:nk]' member='&quot;BBVA MEXICO&quot;' />
+              <groupfilter function='member' level='[none:Nombre:nk]' member='&quot;SANTANDER&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]' direction='DESC' using='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[avg:costoSolictud:qk]' />
+          <filter class='quantitative' column='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:year:qk]' included-values='in-range'>
+            <min>2022</min>
+            <max>2024</max>
+          </filter>
+          <slices>
+            <column>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]</column>
+            <column>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]' value='102' />
+            <format attr='height' field='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]' value='60' />
+            <format attr='font-size' field='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[avg:costoSolictud:qk]' value='7' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:year:ok]' value='36' />
+            <format attr='width' field='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]' value='144' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='wrap' field='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]' value='auto' />
+            <format attr='text-orientation' field='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:year:ok]' value='-90' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='3' />
+            <format attr='stroke-color' id='refline0' value='#998f8cc9' />
+            <format attr='wrap' id='refline0' value='auto' />
+            <format attr='text-orientation' id='refline0' value='90' />
+            <format attr='vertical-align' id='refline0' value='center' />
+            <format attr='text-align' id='refline0' value='right' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]' />
+              <text column='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[avg:costoSolictud:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[avg:costoSolictud:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='value' probability='95' scope='per-pane' value-column='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[avg:costoSolictud:qk]' z-order='1' />
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[avg:costoSolictud:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='auto' />
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-orientation' value='90' />
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1449' />
+                <format attr='maxwidth' value='1449' />
+                <format attr='minheight' value='648' />
+                <format attr='maxheight' value='648' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1106' />
+                <format attr='maxwidth' value='1106' />
+                <format attr='minheight' value='648' />
+                <format attr='maxheight' value='648' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:year:ok] / [federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk])</rows>
+        <cols>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[avg:costoSolictud:qk]</cols>
+      </table>
+      <simple-id uuid='{26EA7CE9-BAB9-490E-BF61-969403AECB8A}' />
+    </worksheet>
+    <worksheet name='Hoja 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Intentos fallidos antes del primer cobro</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Credifiel_Enhanced1' name='federated.10tcw2x1tjgebu11cgds80kxj7rw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10tcw2x1tjgebu11cgds80kxj7rw'>
+            <column-instance column='[primerCobro]' derivation='Count' name='[cnt:primerCobro:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[primerCobro]' derivation='None' name='[none:primerCobro:qk]' pivot='key' type='quantitative' />
+            <column caption='Primer Cobro' datatype='integer' name='[primerCobro]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:primerCobro:qk]' scope='cols' value='Intentos' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#a0cbe8' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[cnt:primerCobro:qk]</rows>
+        <cols>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:primerCobro:qk]</cols>
+      </table>
+      <simple-id uuid='{019D2576-C6A0-4347-B47D-855B8F5EEFCE}' />
+    </worksheet>
+    <worksheet name='Hoja3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Gasto acumulado anual por banco</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Credifiel_Enhanced1' name='federated.10tcw2x1tjgebu11cgds80kxj7rw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10tcw2x1tjgebu11cgds80kxj7rw'>
+            <column datatype='string' name='[Nombre]' role='dimension' type='nominal' />
+            <column caption='Costo Solictud' datatype='real' name='[costoSolictud]' role='measure' type='quantitative' />
+            <column-instance column='[Nombre]' derivation='None' name='[none:Nombre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[costoSolictud]' derivation='Sum' name='[sum:costoSolictud:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Nombre:nk]' member='&quot;BANAMEX&quot;' />
+              <groupfilter function='member' level='[none:Nombre:nk]' member='&quot;BANORTE&quot;' />
+              <groupfilter function='member' level='[none:Nombre:nk]' member='&quot;BBVA MEXICO&quot;' />
+              <groupfilter function='member' level='[none:Nombre:nk]' member='&quot;SANTANDER&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:year:qk]' included-values='in-range'>
+            <min>2022</min>
+            <max>2024</max>
+          </filter>
+          <slices>
+            <column>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]</column>
+            <column>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:costoSolictud:qk]' scope='rows' value='Costo total de solictudes' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]' value='99' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]' value='7' />
+            <format attr='text-orientation' field='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]' />
+              <text column='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:costoSolictud:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[sum:costoSolictud:qk]</rows>
+        <cols>([federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:year:ok] / [federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk])</cols>
+      </table>
+      <simple-id uuid='{BABA804E-0B2A-4836-BD6C-968BF038F93A}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='1' param='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]</field>
+            <field>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:year:ok]</field>
+            <field>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D9C81459-5076-4A96-9370-0389DACA857F}' />
+    </window>
+    <window class='worksheet' name='Hoja3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:Nombre:nk]</field>
+            <field>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:year:ok]</field>
+            <field>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FD75FCDC-075E-4908-8475-144AB101D053}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Hoja 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10tcw2x1tjgebu11cgds80kxj7rw].[none:primerCobro:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8B088DE5-689C-4C37-8EBA-D36E6DE9A01F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      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
+      hf8Po5vbln1kjBsAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Hoja 2' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Hoja3' width='192'>
+      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
+      Va0aS1wAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
